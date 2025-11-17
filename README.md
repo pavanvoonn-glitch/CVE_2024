@@ -20,9 +20,6 @@ This Bronze table is just the raw data stored in a clean format for the next ste
 
 
 
-
-
-
 ## 2. Silver Layer
 
 In the Silver layer, I cleaned and structured the data. I parsed the raw JSON fields into columns and extracted useful information such as:
@@ -42,10 +39,10 @@ I also added a few helper fields:
 - cve_number
 
 I filtered only CVE-2024 records and created a clean analysis-ready Silver view.
+<img width="1032" height="567" alt="Screenshot 2025-11-16 at 9 08 04 PM" src="https://github.com/user-attachments/assets/b53e1082-1b02-4c44-aaf4-f9854772854b" />
+<img width="720" height="235" alt="Screenshot 2025-11-16 at 9 08 58 PM" src="https://github.com/user-attachments/assets/1a19d7f8-491b-4ab6-9ed2-b90d23a157af" />
 
-(Add Silver screenshots here)
-![Silver Sample](images/silver_sample.png)
-![Silver Schema](images/silver_schema.png)
+
 
 ## 3. EDA
 
@@ -53,23 +50,20 @@ After preparing the Silver layer, I used Spark SQL to perform simple exploratory
 
 ### Monthly CVE counts
 How many vulnerabilities were published each month in 2024.
+<img width="505" height="326" alt="Screenshot 2025-11-16 at 9 10 15 PM" src="https://github.com/user-attachments/assets/a69f23f0-aa70-495b-aa33-c5d452c7c81c" />
 
-![Monthly](images/monthly.png)
 
 ### Severity distribution
 Most CVEs showed “Unknown” because many 2024 entries do not yet have CVSS scores.
+<img width="301" height="161" alt="Screenshot 2025-11-16 at 9 11 45 PM" src="https://github.com/user-attachments/assets/f14eda0e-c1ec-4644-9f99-9d05ad603f6e" />
 
-![Severity](images/severity.png)
 
 ### Top vendors
 Shows which vendors appeared most often (Linux, Microsoft, Red Hat, Siemens, Apple, Adobe, etc.).
+<img width="1020" height="417" alt="Screenshot 2025-11-16 at 9 12 24 PM" src="https://github.com/user-attachments/assets/8d372b82-28fc-49a4-aff4-1d33e90ff51a" />
+<img width="1023" height="390" alt="Screenshot 2025-11-16 at 9 13 03 PM" src="https://github.com/user-attachments/assets/a606e03a-4ac2-4aee-8c73-362a1dcd799c" />
+<img width="1024" height="379" alt="Screenshot 2025-11-16 at 9 13 27 PM" src="https://github.com/user-attachments/assets/195c20b5-bd82-44a3-8026-1926f55b9139" />
 
-![Vendors](images/vendors.png)
-
-### Vendor severity breakdown
-Severity distribution for each top vendor (mostly “Unknown” for 2024).
-
-![Vendor Severity](images/vendor_severity.png)
 
 ## 4. Conclusion
 
@@ -81,7 +75,4 @@ This project helped me understand how to:
 
 Even though many CVSS scores were missing for 2024, the pipeline worked correctly and the structure can be reused for future CVE datasets.
 
-## Screenshot Folder
-
-Place all screenshots inside this folder:
 
