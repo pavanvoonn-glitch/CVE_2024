@@ -51,11 +51,15 @@ After preparing the Silver layer, I used Spark SQL to perform simple exploratory
 ### Monthly CVE counts
 How many vulnerabilities were published each month in 2024.
 <img width="505" height="326" alt="Screenshot 2025-11-16 at 9 10 15 PM" src="https://github.com/user-attachments/assets/a69f23f0-aa70-495b-aa33-c5d452c7c81c" />
+<img width="766" height="404" alt="Screenshot 2025-11-16 at 9 18 08 PM" src="https://github.com/user-attachments/assets/5d16b20d-1ea4-4d71-a5e3-cb734b76416a" />
+<img width="421" height="330" alt="Screenshot 2025-11-16 at 9 18 31 PM" src="https://github.com/user-attachments/assets/5a873f1e-b029-4353-beb3-7e5834484c3d" />
 
 
 ### Severity distribution
 Most CVEs showed “Unknown” because many 2024 entries do not yet have CVSS scores.
 <img width="301" height="161" alt="Screenshot 2025-11-16 at 9 11 45 PM" src="https://github.com/user-attachments/assets/f14eda0e-c1ec-4644-9f99-9d05ad603f6e" />
+<img width="567" height="406" alt="Screenshot 2025-11-16 at 9 19 02 PM" src="https://github.com/user-attachments/assets/3fcf449a-bdbe-477c-93e7-88b652c6f011" />
+<img width="1036" height="416" alt="Screenshot 2025-11-16 at 9 20 37 PM" src="https://github.com/user-attachments/assets/da271ee2-47be-4589-b43d-ff1d28e14f84" />
 
 
 ### Top vendors
